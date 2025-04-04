@@ -84,4 +84,24 @@ answer.
 ```
 
 --------
+## Getting Started:  
+Working with Python 3.12.2 for this project. 
+Clone the repository and install the dependencies:
+'pip install -r requirements.txt'
+
+## Exploratory Data Analysis and Feature Selection:
+To see the plots created in the EDA phase, run the following command:
+'python -m happy_customers.plots'
+
+Run the following command to see the statisical tests performed on the customer survey dataset to improve classification model performance:
+'python -m happy_customers.features'
+
+## Training and Evaluating Classification Models:
+Results from Logisitic Regression, Decision Tree, Random Forest, Support Vector Machine, and Naive Bayes training on X1,X3,X5, and X6 features of the dataset using a .86/.14 training/test split with the following command:
+'python -m happy_customers.models.models_baseline'
+
+Results from Hyperparameter fine tuning previous models using GridSearchCV with the following command:  
+'python -m happy_customers.models.models_fine_tuned'
+
+
 
