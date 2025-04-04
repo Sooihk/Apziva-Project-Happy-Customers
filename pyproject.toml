@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "happy_customers"
+version = "0.0.1"
+description = "This project aims to predict whether a customer is happy/unhappy based on their feedback in a logisitics and delivery context. Using survery responses covering delivery experience, courier satisfication, order fulfillment, and app usability, I apply classification models to uncover key drivers of customer satisfication. The project explores data through EDA, builds and tunes multiple machine learning models and evaluates them based on F1-score to guide operational improvements and enhance customer experience."
+authors = [
+  { name = "Soo Ihk Ro" },
+]
+
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    
+]
+requires-python = "==3.12.2"
+
+
+[tool.ruff]
+line-length = 99
+src = ["happy_customers"]
+include = ["pyproject.toml", "happy_customers/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["happy_customers"]
+force-sort-within-sections = true
+

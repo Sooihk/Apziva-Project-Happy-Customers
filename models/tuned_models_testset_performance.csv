@@ -1,0 +1,6 @@
+Model,Best Params,Accuracy,Precision,Recall,F1-Score
+Random Forest,"{'clf__bootstrap': False, 'clf__max_depth': 5, 'clf__max_features': 'sqrt', 'clf__min_samples_leaf': 2, 'clf__min_samples_split': 5, 'clf__n_estimators': 150}",0.7777777777777778,0.75,0.9,0.8181818181818182
+Decision Tree,"{'clf__max_depth': 3, 'clf__min_samples_leaf': 4, 'clf__min_samples_split': 2}",0.7222222222222222,0.6666666666666666,1.0,0.8
+Support Vector Machine,"{'clf__C': 0.1, 'clf__gamma': 'scale', 'clf__kernel': 'rbf'}",0.5555555555555556,0.5555555555555556,1.0,0.7142857142857143
+Logistic Regression,"{'clf__C': 0.1, 'clf__penalty': 'l2', 'clf__solver': 'liblinear'}",0.6111111111111112,0.6363636363636364,0.7,0.6666666666666666
+Naive Bayes,"{'clf__C': 0.1, 'clf__gamma': 'scale', 'clf__kernel': 'rbf'}",0.5555555555555556,0.5833333333333334,0.7,0.6363636363636364
