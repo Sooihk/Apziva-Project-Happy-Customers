@@ -6,7 +6,7 @@
 
 This project aims to predict whether a customer is happy/unhappy based on their feedback in a logisitics and delivery context. Using survery responses covering delivery experience, courier satisfication, order fulfillment, and app usability, I apply classification models to uncover key drivers of customer satisfication. The project explores data through EDA, builds and tunes multiple machine learning models and evaluates them based on F1-score to guide operational improvements and enhance customer experience.
 
-Context:
+## Context:
 We are one of the fastest growing startups in the logistics and delivery domain. We work
 with several partners and make on-demand delivery to our customers. From operational
 standpoint we have been facing several different challenges and everyday we are trying to
@@ -19,13 +19,15 @@ Getting feedback from customers is not easy either, but we do our best to get co
 feedback from our customers. This is a crucial function to improve our operations across all
 levels. We recently did a survey to a select customer cohort. You are presented with a subset
 of this data. We will be using the remaining data as a private test set.
-Objective:
+
+## Objective:
 1. Predict if a customer is happy or not based on the answers they give to questions asked.
 2. Reach 73% F1 score or above.
 3. Identify features most important when predicting a customer's happiness.
 4. Discover minimal set of features what would preserve the most information about the
 problem while increasing predictabiliy of the data.
-Dataset:
+
+## Dataset:
 Y = target attribute (Y) with values indicating 0 (unhappy) and 1 (happy) customers
 X1 = my order was delivered on time
 X2 = contents of my order was as I expected
