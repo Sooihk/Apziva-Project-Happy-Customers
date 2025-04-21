@@ -1,4 +1,4 @@
-from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, accuracy_score
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
@@ -6,8 +6,6 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.svm import SVC
 from sklearn.naive_bayes import GaussianNB
 import pandas as pd
-from sklearn.preprocessing import StandardScaler
-from sklearn.pipeline import Pipeline
 from happy_customers.data.load_data import load_customer_survey
 
 def customer_happiness_model_predictions(customer_survey):
@@ -77,7 +75,7 @@ def customer_happiness_model_predictions(customer_survey):
     print("\nTraining Set Performance")
     print(train_metrics)
 
-# Call the feature selection
+# Call the model baseline
 if __name__ == "__main__":
     customer_survey = load_customer_survey()
     customer_happiness_model_predictions(customer_survey)
