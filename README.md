@@ -92,7 +92,7 @@ Clone the repository and install the dependencies:
 
 ## Exploratory Data Analysis and Feature Selection:
 To see the plots created in the EDA phase, run the following command:
- 
+  * A
 
 `python -m happy_customers.plots`
 
